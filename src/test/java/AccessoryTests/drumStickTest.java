@@ -34,4 +34,5 @@ public class drumStickTest {
     public void canMarkUp(){
         assertEquals(9, drumStick.markUp());
     }
+
 }

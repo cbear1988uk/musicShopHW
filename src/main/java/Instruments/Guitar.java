@@ -1,8 +1,9 @@
 package Instruments;
 
+import Interfaces.IMarkUp;
 import Interfaces.IPlay;
 
-public class Guitar extends InstrumentParent implements IPlay {
+public class Guitar extends InstrumentParent implements IMarkUp {
 
     private String guitarNoises;
     private int numOfStrings;

@@ -5,6 +5,7 @@ public abstract class AccessoryParent {
     private String type;
     private int salePrice;
     private int shopPurchasePrice;
+    private DrumStick drumStick;
 
     public AccessoryParent(String type, int salePrice, int shopPurchasePrice){
         this.type = type;
@@ -27,6 +28,10 @@ public abstract class AccessoryParent {
     public int markUp(){
         int markUpPrice = (getShopPurchasePrice() / 2) + getShopPurchasePrice();
         return markUpPrice;
+    }
+
+    public void add(DrumStick drumStick){
+        this.drumStick = drumStick;
     }
 
 }

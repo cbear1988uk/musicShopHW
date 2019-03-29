@@ -2,5 +2,7 @@ package Interfaces;
 
 public interface ISell {
 
-    public int markUp();
+    public int add();
+
+    public int remove();
 }
