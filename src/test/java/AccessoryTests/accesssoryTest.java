@@ -1,38 +1,38 @@
 package AccessoryTests;
 
-import Accessories.DrumStick;
+import Accessories.Accessory;
 import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class drumStickTest {
+public class accesssoryTest {
 
-    DrumStick drumStick;
+    Accessory accessory;
 
     @Before
     public void setUp(){
-       drumStick = new DrumStick("Vic Firth", 8, 6);
+       accessory = new Accessory("Drum Sticks", 8, 6);
     }
 
     @Test
     public void hasType() {
-        assertEquals("Vic Firth", drumStick.getType());
+        assertEquals("Drum Sticks", accessory.getType());
     }
 
     @Test
     public void hasSalePrice() {
-        assertEquals(8, drumStick.getSalePrice());
+        assertEquals(8, accessory.getSalePrice());
     }
 
     @Test
     public void hasShopPurchasePrice() {
-        assertEquals(6, drumStick.getShopPurchasePrice());
+        assertEquals(6, accessory.getShopPurchasePrice());
     }
 
     @Test
     public void canMarkUp(){
-        assertEquals(9, drumStick.markUp());
+        assertEquals(9, accessory.markUp());
     }
 
 }

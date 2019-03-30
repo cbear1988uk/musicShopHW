@@ -31,4 +31,10 @@ public abstract class InstrumentParent {
         return markUpPrice;
     }
 
+    public int  calculateProfit(){
+        int markUpPrice = (getShopPurchasePrice() / 2) + getShopPurchasePrice();
+        int profit = (markUpPrice - getShopPurchasePrice());
+        return profit;
+    }
+
 }
