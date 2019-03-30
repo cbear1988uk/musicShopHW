@@ -4,18 +4,13 @@ import javax.sound.midi.Instrument;
 
 public abstract class InstrumentParent {
 
-    private String type;
+
     private int salePrice;
     private int shopPurchasePrice;
 
-    public InstrumentParent(String type, int salePrice, int shopPurchasePrice){
-        this.type = type;
+    public InstrumentParent(int salePrice, int shopPurchasePrice){
         this.salePrice = salePrice;
         this.shopPurchasePrice = shopPurchasePrice;
-    }
-
-    public String getType(){
-        return type;
     }
 
     public int getSalePrice() {

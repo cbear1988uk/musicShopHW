@@ -1,6 +1,7 @@
 package AccessoryTests;
 
 import Accessories.Accessory;
+import enums.accessoryType;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -12,12 +13,12 @@ public class accesssoryTest {
 
     @Before
     public void setUp(){
-       accessory = new Accessory("Drum Sticks", 8, 6);
+       accessory = new Accessory(accessoryType.DRUM_STICKS, 8, 6);
     }
 
     @Test
     public void hasType() {
-        assertEquals("Drum Sticks", accessory.getType());
+        assertEquals(accessoryType.DRUM_STICKS, accessory.getType());
     }
 
     @Test

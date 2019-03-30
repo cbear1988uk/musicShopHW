@@ -3,6 +3,8 @@ package ShopTests;
 import Accessories.Accessory;
 import Instruments.Guitar;
 import Shop.Shop;
+import enums.accessoryType;
+import enums.guitarType;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -17,8 +19,8 @@ public class ShopTest {
     @Before
     public void setUp() {
         shop = new Shop("Ray's Music Exchange", 0);
-        accessory = new Accessory("Drum Sticks", 10, 8);
-        guitar = new Guitar("ESP", 250, 175);
+        accessory = new Accessory(accessoryType.DRUM_STICKS, 10, 8);
+        guitar = new Guitar(guitarType.ESP, 250, 175);
     }
 
     @Test

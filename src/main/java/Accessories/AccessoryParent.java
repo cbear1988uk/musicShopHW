@@ -2,20 +2,15 @@ package Accessories;
 
 public abstract class AccessoryParent {
 
-    private String type;
     private int salePrice;
     private int shopPurchasePrice;
     private Accessory accessory;
 
-    public AccessoryParent(String type, int salePrice, int shopPurchasePrice){
-        this.type = type;
+    public AccessoryParent(int salePrice, int shopPurchasePrice){
         this.salePrice = salePrice;
         this.shopPurchasePrice = shopPurchasePrice;
     }
 
-    public String getType() {
-        return type;
-    }
 
     public int getSalePrice() {
         return salePrice;

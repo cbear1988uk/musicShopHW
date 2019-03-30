@@ -1,6 +1,7 @@
 package InstrumentTests;
 
 import Instruments.Guitar;
+import enums.guitarType;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -12,12 +13,12 @@ public class guitarTest {
 
     @Before
     public void setUp() {
-        guitar = new Guitar("Electric", 250, 180);
+        guitar = new Guitar(guitarType.CARVIN, 250, 180);
     }
 
     @Test
     public void hasType() {
-        assertEquals("Electric", guitar.getType());
+        assertEquals(guitarType.CARVIN, guitar.getType());
     }
 
     @Test
